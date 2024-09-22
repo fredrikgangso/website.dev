@@ -9,7 +9,6 @@ export default plugin(
     });
   },
   {
-    darkMode: "class",
     theme: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],

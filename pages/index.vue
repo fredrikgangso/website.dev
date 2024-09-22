@@ -2,5 +2,5 @@
 </script>
 
 <template>
-    nothing her
+    <AboutMeCard />
 </template>

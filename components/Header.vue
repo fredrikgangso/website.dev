@@ -4,12 +4,12 @@
 </script>
 
 <template>
-    <div class="w-screen">
-        <div class="px-20 py-4 flex justify-between">
+    <div>
+        <div class="py-4 flex justify-between items-center">
             <div class="grow">
                 < FG />
             </div>
-            <div class="grow flex gap-2 justify-end">
+            <div class="grow flex gap-2 justify-end items-center">
                 <!-- slot for CV button/ light and dark mode. -->
                 <div>
                     {{ $t('header.about') }}
@@ -25,14 +25,17 @@
                     {{ $t('header.contact') }}
 
                 </div>
-                <div>
-                    O
+                <div class="items-center flex">
+                    <Icon name="i-hero-icons:sun" />
                 </div>
                 <div>
-                    <button @click="toggleTheme" class="bg-red-900 text-white p-2 rounded-md" />
+                    <button class="bg-gray-600 rounded-md p-1 text-white">
+                        {{ $t('header.downloadCV') }}
+                    </button>
                 </div>
             </div>
         </div>
+
     </div>
 
 </template>
