@@ -2,7 +2,7 @@
 console.log('Hello, World!')
 </script>
 <template>
-    <div class="bg-slate-200 grow flex p-2 justify-between gap-2">
+    <!-- <div class="bg-slate-200 grow flex p-2 justify-between gap-2">
         <div class="bg-red-900 grow max-w-sm rounded-md p-2"> 
             <img src="~/assets/images/lorem-lorem.svg" alt="Nuxt Logo" class="logo" />
         </div>
@@ -14,8 +14,9 @@ console.log('Hello, World!')
 
             </div>
         </div>
-        <div class="bg-red-900 grow">s</div>
+        <div class="bg-red-900 grow">s</div> -->
 
-    </div>
+    <!-- </div> -->
+    <Header />
     <NuxtPage />
 </template>
