@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  modules: ["@nuxt/icon", "@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  css: ["~/assets/styles.css"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   i18n: {
     locales: ["en", "no"].map((i) => ({
       code: i,
@@ -12,13 +19,6 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     langDir: "lang/",
     strategy: "no_prefix",
-  },
-  css: ["~/assets/styles.css"],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
   },
   devtools: { enabled: false },
 });
