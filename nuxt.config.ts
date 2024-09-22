@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
 
-  modules: ["@nuxt/icon", "@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  modules: [
+    "@vueuse/nuxt",
+    "@nuxt/icon",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+  ],
   css: ["~/assets/styles.css"],
   postcss: {
     plugins: {
