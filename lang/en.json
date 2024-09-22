@@ -1,0 +1,11 @@
+{
+  "common": {
+    "hello": "Hello, {name}!"
+  },
+  "header": {
+    "about": "About",
+    "work": "Work",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  }
+}

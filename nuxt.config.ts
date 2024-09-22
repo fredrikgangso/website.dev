@@ -4,11 +4,14 @@ export default defineNuxtConfig({
 
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   i18n: {
-    locales: [
-      { code: "en", iso: "en-US" },
-      { code: "fr", iso: "fr-FR" },
-    ],
+    locales: ["en", "no"].map((i) => ({
+      code: i,
+      file: i + ".json",
+      isCatchallLocale: i === "en",
+    })),
     defaultLocale: "en",
+    langDir: "lang/",
+    strategy: "no_prefix",
   },
   css: ["~/assets/styles.css"],
   postcss: {
